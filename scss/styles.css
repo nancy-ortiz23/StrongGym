@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*Paleta de colores*/
+/*Tamaño de fuentes e iconos*/
+/*Resoluciones de pantallas*/
+/*Separaciones (margenes y paddings)*/
+/*Fuente*/
+/*MIXINS*/
+body {
+  background-color: #000;
+  color: #b2b2b2;
+}
+
+.nav-link,
+.navbar-nav .nav-link.active {
+  color: #b2b2b2;
+}
+.nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+  color: orangered;
+}
+
+.navbar-toggler {
+  background-color: orangered;
+}
+
+.carousel-item img {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 80vh;
+  }
+}
+h1, h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.parrafo-white {
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*anidacion*/
+.container-redes a {
+  color: orangered;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.btn {
+  border: solid 1px #b2b2b2;
+  width: 200px;
+  text-align: center;
+  padding: radius 10px;
+}/*# sourceMappingURL=styles.css.map */
