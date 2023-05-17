@@ -1,0 +1,45 @@
+.contenedor-opciones {
+    @include flex-columna;
+}
+
+.contenedor img {
+    display: none;
+}
+.contenedor-card {
+    @include flex-columna;
+    gap: $espacio-medio;
+    margin-top: $espacio-grande;
+}
+
+.contenedor-opciones{
+    @extend.btn {
+        cursor: pointer;
+        padding: 8px,15px;
+        font-size: $fuente-chica;
+    }
+}
+
+&hover {
+    background-color: $color-terciario;
+    color: $color-primario;
+
+}
+
+@media (min-width: $tablet) {
+    .contenedor-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1 fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .contenedor-card {
+        grid-template-columns: repeat(3, 1 fr);
+    }
+}
+
+@media (min-width: $desktopXG) {
+    grid-template-columns: repeat(3, 1fr);
+}
