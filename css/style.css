@@ -53,7 +53,7 @@ img{
 }
 
 .banner {
-  background-image: url(../img//entrenamiento.jpg);
+  background-image: url(../img/entrenamiento.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
