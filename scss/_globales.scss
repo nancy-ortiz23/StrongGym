@@ -1,6 +1,7 @@
 body {
-    background-color: rgb(31, 29, 29);
-    color: white;
+    font-family: $Fuente-principal;
+    background-color: $color-primario;
+    color: $color-secundario;
 }
 
 header {

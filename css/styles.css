@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 70 |     font-size: $fuente-grande;
+ * 71 |     font-size: $fuente-grande;
  *    |                ^^^^^^^^^^^^^^
  *    '
- *   scss\_globales.scss 70:16  @import
+ *   scss\_globales.scss 71:16  @import
  *   scss\styles.scss 2:9       root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 70 \2502      font-size: $fuente-grande;\d\a    \2502                 ^^^^^^^^^^^^^^\a    \2575 \a   scss\\_globales.scss 70:16  @import\a   scss\\styles.scss 2:9       root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 71 \2502      font-size: $fuente-grande;\d\a    \2502                 ^^^^^^^^^^^^^^\a    \2575 \a   scss\\_globales.scss 71:16  @import\a   scss\\styles.scss 2:9       root stylesheet";
 }
