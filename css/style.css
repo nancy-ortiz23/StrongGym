@@ -10,9 +10,15 @@ margin:0;
 padding:0;
 }
 
+html {
+  font-size: 18px;
+  width:100%;
+  min-width: 375px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
 body {
-  background-color: rgb(31, 29, 29);
-  color:white;
+  position: relative;
 }
 
 header {
@@ -71,7 +77,7 @@ main {
 }
 
 
-h1,h2,h3,h4{
+h1,h2,h3,h4, H5,h6{
   color: #b2b2b2;
   text-align: center;
   margin: 20px 0;
