@@ -10,15 +10,9 @@ margin:0;
 padding:0;
 }
 
-html {
-  font-size: 18px;
-  width:100%;
-  min-width: 375px;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
 body {
-  position: relative;
+  background-color: rgb(31, 29, 29);
+  color:white;
 }
 
 header {
@@ -34,7 +28,6 @@ header {
 header img {
   width: 120px;
 }
-
 
 ul {
   list-style: none;
@@ -57,10 +50,10 @@ img{
   color: #b2b2b2;
 
   padding: 5px 10px;
-}git commitgi
+}
 
 .banner {
-  background-image: url(../img/entrenamiento.jpg);
+  background-image: url(../img//entrenamiento.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -77,7 +70,7 @@ main {
 }
 
 
-h1,h2,h3,h4, H5,h6{
+h1,h2,h3,h4{
   color: #b2b2b2;
   text-align: center;
   margin: 20px 0;
