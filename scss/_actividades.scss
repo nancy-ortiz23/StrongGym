@@ -13,10 +13,10 @@
 
 .contenedor-opciones{
     @extend.btn {
-        cursor: pointer;
-        padding: 8px,15px;
-        font-size: $fuente-chica;
-    }
+    cursor: pointer;
+    padding: 8px,15px;
+    font-size: $fuente-chica;
+}
 }
 
 &hover {
