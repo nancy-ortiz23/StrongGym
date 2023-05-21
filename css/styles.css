@@ -46,9 +46,9 @@ a {
 img{
   max-width: 100%;
 }
+
 .enlaces {
   color: #b2b2b2;
-
   padding: 5px 10px;
 }
 
@@ -318,7 +318,7 @@ footer {
 }
 
 /* Media Queries para hacer el diseño responsive */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   /* Cambiar el grid a una sola columna */
   .actividades {
     grid-template-columns: 1fr;
@@ -338,7 +338,6 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
-}
 
   /* Definimos la alineación de los elementos */
   .contenedor {
@@ -357,7 +356,7 @@ footer {
   .contenedor-textos {
     text-align: center;
   }
-
+}
 
 /* Estilos para tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -366,7 +365,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-  }
   }
 
   /* Definimos la alineación de los elementos */
@@ -386,17 +384,16 @@ footer {
   .contenedor-textos {
     text-align: center;
   }
-
+}
 
 /* Estilos para desktop */
-@media (min-width: 1024px) {
+@media(min-width: 1024px) {
   /* Definimos las columnas para el grid */
   .contenedor-padre {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
-}
 
   /* Definimos la alineación de los elementos */
   .contenedor {
@@ -415,7 +412,7 @@ footer {
   .contenedor-textos {
     text-align: center;
   }
-
+}
 
 
 /*# sourceMappingURL=styles.css.map */
