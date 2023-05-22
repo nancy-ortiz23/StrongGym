@@ -2,4 +2,14 @@
 @import "globales";
 @import "inicio";
 @import "actividades";
+    
+body {
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+h1{
+    color: $color-secundario;
+    padding:15px;
+}
 
