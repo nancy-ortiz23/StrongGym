@@ -4,7 +4,9 @@
 @import "actividades";
     
 body {
+    font-size: 40px;
     background-color: $color-primario;
     color: $color-secundario;
+    text-transform: uppercase;
 }
 
