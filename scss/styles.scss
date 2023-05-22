@@ -3,10 +3,485 @@
 @import "inicio";
 @import "actividades";
     
-body {
-    font-size: 40px;
-    background-color: $color-primario;
-    color: $color-secundario;
-    text-transform: uppercase;
+/*Paleta de colores*/
+$color-primario: #000;
+$color-secundario: #b2b2b2;
+$color-terciario:  orangered;
+
+// Estilos globales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%; // base font-size de 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $color-primario;
+}
+
+a {
+    text-decoration: none;
+    color: $color-secundario;
+}
+
+img {
+    min-width: 100%;
+}
+
+// Header
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primario;
+    padding: 2rem;
+
+img {
+    height: 6rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: $color-blanco;
+}
+
+nav {
+ul {
+    display: flex;
+
+li {
+        margin-left: 2rem;
+
+a {
+    font-size: 1.6rem;
+    color: $color-blanco;
+
+&:hover {
+    color: $color-secundario;
+        }
+        }
+    
+    }
+}
+}
+}
+
+// Banner
+.banner {
+    height: 40rem;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+// Main
+main {
+    padding: 4rem;
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $color-secundario;
+}
+
+.padre-cards {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+
+.card {
+    flex: 1;
+    margin-right: 2rem;
+    border: 1px solid $color-secundario;
+    border-radius: 5px;
+
+img {
+    width: 100%;
+}
+}
+
+.parrafo-white {
+    font-size: 1.8rem;
+    margin: 2rem;
+    color: $color-blanco;
+}
+}
+}
+
+// Section
+section {
+background-color: $color-primario;
+padding: 4rem;
+
+.contenedor-padre {
+    margin-bottom: 4rem;
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $color-secundario;
+}
+}
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+    img {
+    width: 10rem;
+    margin-right: 4rem;
+}
+
+.contenedor-textos {
+    h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $color-secundario;
+}
+}
+
+p {
+    font-size: 1.6rem;
+    color: $color-primario;
+    line-height: 2;
+}
+
+&.reverse {
+    flex-direction:column-reverse;
+}
+
+.contenedor.reverse {
+    flex-direction: row-reverse;
+}
+
+.imagen-fullbody {
+    margin-right: 20px;
+}
+
+.contenedor-textos {
+    min-width: 600px;
+    margin-right: 20px;
+}
+
+.contenedor-textos h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.contenedor-textos p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: $color-secundario;
+}
+
+.contenedor img {
+    min-width: 400px;
+}
+
+footer {
+    background-color: $color-primario;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.padre-redes {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.icono-redes {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 10px $color-primario;
+}
+
+contacto.css{
+    color: $color-primario;
+}
+
+
+  /* Estilos para el formulario */
+
+.form {
+    margin: 30px auto;
+    min-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px $color-primario;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 2px 10px $color-primario;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: $color-terciario;
+    color: $color-secundario;
+}
+
+.btn-secondary {
+    background-color: $color-terciario;
+    color: $color-secundario;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+  /* Estilos para el pie de página */
+
+footer {
+    background-color: $color-primario;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.padre-redes {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.icono-redes {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px $color-primario;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 10px $color-primario;
+}
+  /* Estilos para dispositivos móviles */
+@media (min-width: 768px) {
+    header nav {
+    display: none;
+}
+    
+header nav.open {
+    display: block;
+    }
+    
+header nav.open ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    header nav.open ul li {
+    margin-bottom: 10px;
+    }
+    
+    header nav.open ul li a {
+    text-align: center;
+    }
+    
+    header .menu-toggle {
+    display: block;
+    text-align: center;
+    background-color: $color-secundario;
+    padding: 10px;
+    cursor: pointer;
+}
+}
+
+  /* Estilos para la sección de actividades */
+.actividades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+  /* Estilos para los contenedores de cada tarjeta */
+.contenedor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $color-terciario;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px $color-primario;
+    overflow: hidden;
+}
+
+  /* Estilos para las imágenes de cada tarjeta */
+.contenedor-card img {
+    min-width: 100%;
+}
+
+  /* Estilos para los textos de cada tarjeta */
+.contenedor-texto {
+    padding: 1rem;
+}
+
+  /* Media Queries para hacer el diseño responsive */
+@media(min-width: 768px) {
+    /* Cambiar el grid a una sola columna */
+    .actividades {
+    grid-template-columns: 1fr;
+    }
+    
+    /* Ajustar el tamaño de las imágenes */
+    .contenedor-card img {
+    min-width: 50%;
+    }
+}
+
+  /* Estilos para mobile */
+@media (min-width: 768px) {
+    /* Definimos las columnas para el grid */
+    .contenedor-padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    }
+
+    /* Definimos la alineación de los elementos */
+    .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    /* Ajustamos el tamaño de la imagen */
+    .contenedor img {
+    width: 100%;
+    min-width: 200px;
+    }
+
+    /* Centramos los textos */
+    .contenedor-textos {
+    text-align: center;
+    }
+}
+
+  /* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Definimos las columnas para el grid */
+    .contenedor-padre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    }
+
+    /* Definimos la alineación de los elementos */
+    .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    /* Ajustamos el tamaño de la imagen */
+    .contenedor img {
+    width: 100%;
+    min-width: 250px;
+    }
+
+    /* Centramos los textos */
+    .contenedor-textos {
+    text-align: center;
+    }
+
+
+  /* Estilos para desktop */
+@media(min-width: 1024px) {
+    /* Definimos las columnas para el grid */
+    .contenedor-padre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    }
+
+    /* Definimos la alineación de los elementos */
+    .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    /* Ajustamos el tamaño de la imagen */
+    .contenedor img {
+    width: 100%;
+    min-width: 300px;
+    }
+
+    /* Centramos los textos */
+    .contenedor-textos {
+    text-align: center;
+    }
+}
+
+
+  /*# sourceMappingURL=styles.css.map */
