@@ -18,7 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
-    color: $color-negro;
+    color: $color-primario;
 }
 
 a {
@@ -113,7 +113,7 @@ img {
 
 // Section
 section {
-background-color: $color-blanco;
+background-color: $color-primario;
 padding: 4rem;
 
 .contenedor-padre {
