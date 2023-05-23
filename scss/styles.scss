@@ -2,6 +2,8 @@
 @import "globales";
 @import "inicio";
 @import "actividades";
+@import "contacto"
+
     
 /*Paleta de colores*/
 $color-primario: #000;
@@ -400,7 +402,7 @@ header nav.open ul {
 }
 
   /* Estilos para mobile */
-@media (min-width: 768px) {
+@media (min-width: 660px) {
     /* Definimos las columnas para el grid */
     .contenedor-padre {
     display: grid;
@@ -428,7 +430,7 @@ header nav.open ul {
 }
 
   /* Estilos para tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 660px) and (max-width: 1023px) {
     /* Definimos las columnas para el grid */
     .contenedor-padre {
     display: grid;

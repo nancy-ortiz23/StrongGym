@@ -1,18 +1,18 @@
 .contenedor-opciones {
-    @include flex-columna;
+    @mixin flex-columna;
 }
 
 .contenedor img {
     display: none;
 }
 .contenedor-card {
-    @include flex-columna;
+    @mixin flex-columna;
     gap: $espacio-medio;
     margin-top: $espacio-grande;
 }
 
 .contenedor-opciones{
-    @extend.btn {
+    @mixin flex-columna {
     cursor: pointer;
     padding: 8px,15px;
     font-size: $fuente-chica;
