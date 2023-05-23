@@ -24,23 +24,11 @@ $espacio-grande:60px;
 $Fuente-principal: 'Montserrat', sans-serif;
 
 /*MIXINS*/
-@mixin flex-header{
+@mixins flex-column {
     display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-@mixin flex-container-actividades{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-@mixin flex-container-tarjetas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
