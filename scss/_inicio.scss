@@ -1,5 +1,5 @@
 .banner {
-    @mixin flex-columna
+    @include flex-columna; 
     gap: $espacio-chico;
 }
 
