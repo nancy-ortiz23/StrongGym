@@ -11,8 +11,8 @@ $color-terciario: orangered;
 }
 
 html {
-  font-size: 62.5%; // base font-size de 10px;
-}
+  font-size: 62.5%; 
+  }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -30,7 +30,6 @@ body {
   }
 }
 
-// Header
 header {
   display: flex;
   justify-content: space-between;
@@ -67,7 +66,7 @@ header {
   }
 }
 
-// Banner
+
 .banner {
   height: 40rem;
   background-image: url('../img/banner.jpg');
@@ -75,7 +74,7 @@ header {
   background-position: center;
 }
 
-// Main
+
 main {
   padding: 4rem;
 
@@ -110,7 +109,7 @@ main {
   }
 }
 
-// Section
+
 section {
   background-color: $color-primario;
   padding: 4rem;
@@ -224,7 +223,7 @@ footer {
   }
 }
 
-/* Estilos para el formulario */
+
 .form {
     margin: 30px auto;
     min-width: 600px;
@@ -278,7 +277,7 @@ footer {
   }
 }
 
-/* Estilos para el pie de página */
+
 footer {
   background-color: $color-primario;
   padding: 20px;
@@ -315,7 +314,7 @@ footer {
   }
 }
 
-/* Estilos para dispositivos móviles */
+
 @media (min-width: 660px) {
   header nav {
     display: none;
@@ -348,7 +347,7 @@ footer {
   }
 }
 
-/* Estilos para la sección de actividades */
+
 .actividades {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
