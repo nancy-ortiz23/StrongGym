@@ -24,7 +24,7 @@ $espacio-grande:60px;
 $Fuente-principal: 'Montserrat', sans-serif;
 
 /*MIXINS*/
-@mixins flex-column {
+@mixin flex-column {
     display:flex;
     flex-direction: column;
     justify-content: center;
