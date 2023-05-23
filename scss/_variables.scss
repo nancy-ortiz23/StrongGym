@@ -4,36 +4,43 @@ $color-secundario: #b2b2b2;
 $color-terciario:  orangered;
 
 /*Tamaño de fuentes e iconos*/
-$fuente-chica: 14px;
-$fuente-media: 20px;
 $fuente-grande: 40px;
+$fuente-media: 20px;
 $icono-chico: 40px;
 $icono-grande: 60px;
 
 /*Resoluciones de pantallas*/
-$tablet: 768px;
-$desktop: 992px;
-$desktopXG: 1200px;
+$tablet:900px;
+$movie:660px;
+
 
 /*Separaciones (margenes y paddings)*/
-$espacio-Xchico: 10px;
-$espacio-chico: 20px;
-$espacio-medio: 40px;
-$espacio-grande: 60px;
+$espacio-Xchico:10px;
+$espacio-chico:20px;
+$espacio-medio:40px;
+$espacio-grande:60px;
 
 /*Fuente*/
-$Fuente-principal: 'Montserrat' , sans-serif;
+$Fuente-principal: 'Montserrat', sans-serif;
 
 /*MIXINS*/
-@mixin flex-columna{
+@mixin flex-header{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 
-@mixin flex-fila-centrado {
+@mixin flex-container-actividades{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
+
+@mixin flex-container-tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
