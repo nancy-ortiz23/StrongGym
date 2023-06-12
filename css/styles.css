@@ -99,11 +99,12 @@ h1,h2,h3,h4{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin: 0 auto;
 }
+
 .card img {
-  display: block;
-  width: 100%;
-  height: auto;
+  display: block; 
+  margin: 0 auto; 
 }
 
 .contenedor-padre {
