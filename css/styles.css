@@ -76,7 +76,7 @@ h1, h2, h3, h4 {
 }
 
 .parrafo-white {
-  background-color: orangered;
+  background-color: #ac6262;
   color: #b2b2b2;
   padding: 2rem;
   text-align: center;
@@ -233,7 +233,7 @@ footer {
 }
 
 .btn-primary {
-  background-color: #ff0000;
+  background-color: orangered;
   color: #b2b2b2;
 }
 
