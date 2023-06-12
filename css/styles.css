@@ -12,8 +12,8 @@
 }
 
 body {
-  background-color: rgb(31, 29, 29);
-  color: white;
+  background-color: #ac6262;
+  color: #b2b2b2;
 }
 
 header {
@@ -250,7 +250,7 @@ footer {
 /* Estilos para el pie de página */
 
 footer {
-  background-color: #211c1c;
+  background-color: #ac6262;
   padding: 20px;
   text-align: center;
   font-size: 14px;
