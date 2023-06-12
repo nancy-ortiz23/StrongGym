@@ -1,5 +1,5 @@
 .banner {
-    @include flex-columna; 
+    @mixin flex-columna{
     gap: $espacio-chico;
 }
 
@@ -9,4 +9,5 @@
         justify-content: center;
         gap: $espacio-grande;
     }
+}
 }
