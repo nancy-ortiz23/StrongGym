@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    .<link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/styles.css">
     <meta name="description" content="Aqui podras ver todas las actividades que ofrecemos para ponerte en forma">
 
     <link rel="shortcut icon" href="../img/logo.jpeg">
@@ -16,10 +18,12 @@
     <!--Cabecera-->
     <header>
         <a href="../index.html">
-            <img src="../img/logo-strong.png" alt="Logo Strong">
+            <img data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" src="../img/logo-strong.png" alt="Logo Strong">
         
         </a>
-        <h1>Strong gym</h1>
+        <h1>Strong Gym</h1>
         <nav>
             <ul>
                 <li>
@@ -49,7 +53,9 @@
     <main>
         <h2>Estas son nuestras actividades</h2>
         <section class="actividades">
-        <div class="contenedor-card">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="contenedor-card">
             <img src="../img/icono-cardio.png" alt="cardio">
             <div class="contenedor-texto">
             <h3>Actividades funcionales</h3>
@@ -58,7 +64,9 @@
             </div>
         </div>
 
-        <div class="contenedor-card">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="contenedor-card">
             <img src="../img/icono-fullbody.png" alt="fullbody">
             <div class="contenedor-texto">
             <h3>Actividades Fullbody</h3>
@@ -66,7 +74,9 @@
             </div>
         </div>
     
-        <div class="contenedor-card">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="contenedor-card">
             <img src="../img/icono-musculacion.png" alt="musculacion">
             <div class="contenedor-texto">
             <h3>Actvidades de Musculacion</h3>
@@ -93,6 +103,9 @@
 
     <p>Sitio web creado sin fines de lucro&copy;</p>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init();</script>
 
 <a href="https://api.whatsapp.com/send?phone=5491112345678" title="whatsapp" rel="noopener" target="_blank">
     <img src="../img/icono-whatsapp.png" alt="Icono whatsapp" class="whatsapp">

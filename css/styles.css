@@ -86,7 +86,18 @@ h1, h2, h3, h4 {
   padding: 2rem;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2rem auto; /* Agrega un margen superior e inferior para separarlo del borde y centra horizontalmente */
+  max-width: 800px; /* Establece un ancho máximo para el párrafo */
+  box-sizing: border-box; /* Incluye el padding en el ancho máximo */
+}
+
+@media (max-width: 480px) {
+  .parrafo-white {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    padding: 1.5rem; /* Ajusta el padding para dispositivos móviles */
+    margin: 1rem auto; /* Ajusta el margen para dispositivos móviles */
+  }
 }
 
 .padre-cards {

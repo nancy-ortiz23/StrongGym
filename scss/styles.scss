@@ -299,10 +299,14 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      background-color: #ff4500;
+      background-color: #641e04;
       border-radius: 10px;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
       overflow: hidden;
+    }
+    .car:hover {
+      transform: scale(1,2);
+
     }
     
     /* Estilos para las imágenes de cada tarjeta */
