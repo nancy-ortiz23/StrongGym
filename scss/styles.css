@@ -404,7 +404,7 @@ footer .whatsapp:hover {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .banner .contenedor-padre {
     flex-direction: row;
     justify-content: center;
