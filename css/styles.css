@@ -1,203 +1,193 @@
 @charset "UTF-8";
-/*Paleta de colores*/
-/*Tamaño de fuentes e iconos*/
-/*Resoluciones de pantallas*/
-/*Separaciones (margenes y paddings)*/
-/*Fuente*/
-/*MIXINS*/
 /* Paleta de colores */
+/* Tamaño de fuentes e iconos */
+/* Resoluciones de pantallas */
+/* Separaciones (márgenes y rellenos) */
+/* Fuente */
+/* MIXINS */
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: #641e04;
-}
-
-body a {
-  text-decoration: none;
-  color: #b2b2b2;
-}
-
-body img {
-  min-width: 100%;
+  background-color: #ac6262;
+  color: #f5f5f5;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #641e04;
-  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.9;
+  position: sticky;
+  top: 0;
 }
 
 header img {
-  height: 6rem;
+  width: 120px;
 }
 
-header h1, header h2, header h3, header h4 {
-  font-size: 3rem;
-  color: #b2b2b2;
+ul {
+  list-style: none;
 }
 
-header nav ul {
+nav ul {
   display: flex;
+  gap: 10px;
 }
 
-header nav ul li {
-  margin-left: 2rem;
+a {
+  color: #f5f5f5;
+  text-decoration: none;
 }
 
-header nav ul li a {
-  font-size: 1.6rem;
-  color: #b2b2b2;
+img {
+  max-width: 100%;
 }
 
-header nav ul li a:hover {
-  color: #b2b2b2;
+.enlaces {
+  color: #f5f5f5;
+  padding: 5px 10px;
+  font-size: 14px;
+  border:none;
+  border-radius: 5px;
+  background-color: #d13b8d;
 }
 
 .banner {
-  height: 40rem;
-  background-image: url("../img/banner.jpg");
+  background-image: url(../img/entrenamiento.jpg);
   background-size: cover;
-  background-position: center;
-}
-
-main {
-  padding: 4rem;
-}
-
-main h1, main h2, main h3, main h4 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #b2b2b2;
-}
-
-main .padre-cards {
-  display: flex;
-  align-items: center;
-  margin-top: 4rem;
-}
-
-main .padre-cards .card {
-  flex: 1;
-  margin-right: 2rem;
-  border: 1px solid #b2b2b2;
-  border-radius: 5px;
-}
-
-main .padre-cards .card img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 480px;
   width: 100%;
 }
 
-main .padre-cards .parrafo-white {
-  font-size: 1.8rem;
-  margin: 2rem;
-  color: #b2b2b2;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
 }
 
-section {
-  background-color: #641e04;
-  padding: 4rem;
-}
-
-section .contenedor-padre {
-  margin-bottom: 4rem;
-}
-
-section .contenedor-padre h2 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+h1, h2, h3, h4 {
+  color: #f5f5f5;
   text-align: center;
-  color: #b2b2b2;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.parrafo-white {
+  background-color: #ac6262;
+  color: #f5f5f5;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2rem auto; /* Agrega un margen superior e inferior para separarlo del borde y centra horizontalmente */
+  max-width: 800px; /* Establece un ancho máximo para el párrafo */
+  box-sizing: border-box; /* Incluye el padding en el ancho máximo */
+}
+
+@media (max-width: 480px) {
+  .parrafo-white {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    padding: 1.5rem; /* Ajusta el padding para dispositivos móviles */
+    margin: 1rem auto; /* Ajusta el margen para dispositivos móviles */
+  }
+}
+
+.padre-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 820px;
+  color: #ac6262;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contenedor-padre {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .contenedor {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
-}
-
-.contenedor img {
-  width: 10rem;
-  margin-right: 4rem;
-}
-
-.contenedor .contenedor-textos h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #b2b2b2;
-}
-
-.contenedor p {
-  font-size: 1.6rem;
-  color: #641e04;
-  line-height: 2;
+  margin-bottom: 50px;
 }
 
 .contenedor.reverse {
-  flex-direction: column-reverse;
-}
-
-.contenedor .contenedor.reverse {
   flex-direction: row-reverse;
 }
 
-.contenedor .imagen-fullbody {
+.imagen-fullbody {
   margin-right: 20px;
 }
 
-.contenedor .contenedor-textos {
-  min-width: 600px;
+.contenedor-textos {
+  max-width: 600px;
   margin-right: 20px;
 }
 
-.contenedor .contenedor-textos h3 {
+.contenedor-textos h3 {
   margin-bottom: 10px;
   font-size: 24px;
 }
 
-.contenedor .contenedor-textos p {
+.contenedor-textos p {
   font-size: 18px;
   line-height: 1.5;
-  color: #b2b2b2;
+  color: #f5f5f5;
 }
 
-.contenedor .contenedor img {
-  min-width: 400px;
+.contenedor img {
+  max-width: 400px;
 }
 
 footer {
-  background-color: #641e04;
+  background-color: black;
   padding: 20px;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
 }
 
-footer .padre-redes {
+.padre-redes {
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 
-footer .icono-redes {
+.icono-redes {
   width: 40px;
   height: 40px;
   margin: 0 5px;
 }
 
-footer .whatsapp {
+.whatsapp {
   position: fixed;
   bottom: 20px;
   right: 50px;
@@ -209,130 +199,112 @@ footer .whatsapp {
   cursor: pointer;
 }
 
-footer .whatsapp:hover {
+.whatsapp:hover {
   transform: scale(1.1);
-  box-shadow: 0 2px 10px #641e04;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-footer .contacto.css {
-  color: #641e04;
+.contacto.css {
+  color: #f5f5f5;
 }
+
+/* Estilos para el formulario */
 
 .form {
   margin: 30px auto;
-  min-width: 600px;
+  max-width: 600px;
 }
 
-.form .form-group {
-  margin-bottom: 20px;
+.form-group {
+  margin-bottom: 30px;
 }
 
-.form .form-group .form-label {
+.form-label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  font-size: 18px; /* Aumente el tamaño de la letra */
 }
 
-.form .form-group .form-control {
+.form-control {
   width: 100%;
-  padding: 10px;
+  padding: 30px;
   border: none;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #641e04;
+  box-shadow: 0 10px 10px blueviolet;
+  font-size: 16px; /* Aumente el tamaño de la letra */
 }
 
-.form .form-group .form-control:focus {
+.form-control:focus {
   outline: none;
-  box-shadow: 0 2px 10px #641e04;
+  box-shadow: 0 5px 10px blueviolet;
 }
 
-.form .btn {
+.btn {
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-weight: bold;
   text-transform: uppercase;
   transition: all 0.3s ease;
   cursor: pointer;
+  font-size: 16px; /* Aumente el tamaño de la letra */
 }
 
-.form .btn-primary {
-  background-color: #ac6262;
-  color: #b2b2b2;
+.btn-primary {
+  background-color: blueviolet;
+  color: #f5f5f5;
 }
 
-.form .btn-secondary {
-  background-color: #ac6262;
-  color: #b2b2b2;
-  margin-left: 10px;
+.btn-secondary {
+  background-color: blueviolet;
+  color:#f5f5f5;
+  margin-left: 5px;
 }
 
-.form .btn:hover {
+.btn:hover {
   transform: translateY(-2px);
 }
 
+/* Estilos para el pie de página */
+
 footer {
-  background-color: #641e04;
+  background-color: #ac6262;
   padding: 20px;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
 }
 
-footer .padre-redes {
+.padre-redes {
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 
-footer .icono-redes {
+.icono-redes {
   width: 30px;
   height: 30px;
   margin: 0 10px;
 }
 
-footer .whatsapp {
+.whatsapp {
   position: fixed;
   bottom: 30px;
   right: 30px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  box-shadow: 0 2px 5px #641e04;
+  box-shadow: 0 2px 5px #0000004d;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-footer .whatsapp:hover {
+.whatsapp:hover {
   transform: scale(1.1);
-  box-shadow: 0 2px 10px #641e04;
+  box-shadow: 0 2px 10px #0000004d;
 }
 
-@media (min-width: 660px) {
-  header nav {
-    display: none;
-  }
-  header nav.open {
-    display: block;
-  }
-  header nav.open ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header nav.open ul li {
-    margin-bottom: 10px;
-  }
-  header nav.open ul li a {
-    text-align: center;
-  }
-  header .menu-toggle {
-    display: block;
-    text-align: center;
-    background-color: #b2b2b2;
-    padding: 10px;
-    cursor: pointer;
-  }
-}
+/* Estilos para la sección de actividades */
 .actividades {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -346,15 +318,15 @@ footer .whatsapp:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #ac6262;
+  background-color: #641e04;
   border-radius: 10px;
-  box-shadow: 0px 2px 5px #641e04;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
 /* Estilos para las imágenes de cada tarjeta */
 .contenedor-card img {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 /* Estilos para los textos de cada tarjeta */
@@ -363,187 +335,36 @@ footer .whatsapp:hover {
 }
 
 /* Media Queries para hacer el diseño responsive */
-@media (min-width: 660px) {
+@media only screen and (max-width: 768px) {
   /* Cambiar el grid a una sola columna */
   .actividades {
     grid-template-columns: 1fr;
   }
+
   /* Ajustar el tamaño de las imágenes */
-  .contenedor-card img {
-    min-width: 50%;
-  }
-}
-/* Estilos para movile */
-@media (min-width: 660px) {
-  /* Definimos las columnas para el grid */
-  .contenedor-padre {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-  /* Definimos la alineación de los elementos */
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /* Ajustamos el tamaño de la imagen */
-  .contenedor img {
-    width: 100%;
-    min-width: 200px;
-  }
-  /* Centramos los textos */
-  .contenedor-textos {
-    text-align: center;
-  }
-}
-/* Estilos para tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Definimos las columnas para el grid */
-  .contenedor-padre {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-  }
-  /* Definimos la alineación de los elementos */
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /* Ajustamos el tamaño de la imagen */
-  .contenedor img {
-    width: 100%;
-    min-width: 300px;
-  }
-  /* Centramos los textos */
-  .contenedor-textos {
-    text-align: center;
-  }
-}
-/* Estilos para escritorio */
-@media (min-width: 1024px) {
-  /* Definimos las columnas para el grid */
-  .contenedor-padre {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  /* Definimos la alineación de los elementos */
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /* Ajustamos el tamaño de la imagen */
-  .contenedor img {
-    width: 100%;
-    min-width: 400px;
-  }
-  /* Centramos los textos */
-  .contenedor-textos {
-    text-align: center;
-  }
-}
-@media (min-width: 900px) {
-  .banner .contenedor-padre {
-    flex-direction: row;
-    justify-content: center;
-    gap: 60px;
-  }
-}
-/* Paleta de colores */
-/* Paleta de colores */
-/* Tamaño de fuentes e iconos */
-/* Resoluciones de pantallas */
-/* Separaciones (margenes y paddings) */
-/* Fuente */
-/* Mixin */
-.actividades {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 40px;
-  padding: 40px;
-}
-
-.contenedor-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #ac6262;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px #641e04;
-  overflow: hidden;
-}
-
-.contenedor-card img {
-  max-width: 100%;
-}
-
-@media only screen and (min-width: 900px) {
-  .actividades {
-    grid-template-columns: 1fr;
-  }
   .contenedor-card img {
     max-width: 50%;
   }
-}
-@media (min-width: 900px) {
-  .contenedor-padre {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
-  }
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contenedor img {
-    width: 100%;
-    max-width: 200px;
-  }
-  .contenedor-textos {
-    text-align: center;
+
+  /* Ajustar el tamaño de las fuentes */
+  h1, h2, h3, h4, p {
+    font-size: 16px;
   }
 }
-@media (min-width: 900px) and (max-width: 660px) {
-  .contenedor-padre {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
-  }
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contenedor img {
-    width: 100%;
-    max-width: 250px;
-  }
-  .contenedor-textos {
-    text-align: center;
+
+/* Media Queries para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Ajustar el tamaño de las fuentes */
+  h1, h2, h3, h4, p {
+    font-size: 18px;
   }
 }
-@media (min-width: 660px) {
-  .contenedor-padre {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-  }
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contenedor img {
-    width: 100%;
-    max-width: 300px;
-  }
-  .contenedor-textos {
-    text-align: center;
+
+/* Media Queries para desktop */
+@media(min-width: 1024px) {
+  /* Ajustar el tamaño de las fuentes */
+  h1, h2, h3, h4, p {
+    font-size: 20px;
   }
 }
 
