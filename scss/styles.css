@@ -22,12 +22,10 @@ body {
   line-height: 1.5;
   color: #641e04;
 }
-
 body a {
   text-decoration: none;
   color: #b2b2b2;
 }
-
 body img {
   min-width: 100%;
 }
@@ -39,29 +37,23 @@ header {
   background-color: #641e04;
   padding: 2rem;
 }
-
 header img {
   height: 6rem;
 }
-
 header h1, header h2, header h3, header h4 {
   font-size: 3rem;
   color: #b2b2b2;
 }
-
 header nav ul {
   display: flex;
 }
-
 header nav ul li {
   margin-left: 2rem;
 }
-
 header nav ul li a {
   font-size: 1.6rem;
   color: #b2b2b2;
 }
-
 header nav ul li a:hover {
   color: #b2b2b2;
 }
@@ -76,31 +68,26 @@ header nav ul li a:hover {
 main {
   padding: 4rem;
 }
-
 main h1, main h2, main h3, main h4 {
   font-size: 3rem;
   margin-bottom: 2rem;
   text-align: center;
   color: #b2b2b2;
 }
-
 main .padre-cards {
   display: flex;
   align-items: center;
   margin-top: 4rem;
 }
-
 main .padre-cards .card {
   flex: 1;
   margin-right: 2rem;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
 }
-
 main .padre-cards .card img {
   width: 100%;
 }
-
 main .padre-cards .parrafo-white {
   font-size: 1.8rem;
   margin: 2rem;
@@ -111,11 +98,9 @@ section {
   background-color: #641e04;
   padding: 4rem;
 }
-
 section .contenedor-padre {
   margin-bottom: 4rem;
 }
-
 section .contenedor-padre h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -128,52 +113,42 @@ section .contenedor-padre h2 {
   align-items: center;
   margin-bottom: 4rem;
 }
-
 .contenedor img {
   width: 10rem;
   margin-right: 4rem;
 }
-
 .contenedor .contenedor-textos h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #b2b2b2;
 }
-
 .contenedor p {
   font-size: 1.6rem;
   color: #641e04;
   line-height: 2;
 }
-
 .contenedor.reverse {
   flex-direction: column-reverse;
 }
-
 .contenedor .contenedor.reverse {
   flex-direction: row-reverse;
 }
-
 .contenedor .imagen-fullbody {
   margin-right: 20px;
 }
-
 .contenedor .contenedor-textos {
   min-width: 600px;
   margin-right: 20px;
 }
-
 .contenedor .contenedor-textos h3 {
   margin-bottom: 10px;
   font-size: 24px;
 }
-
 .contenedor .contenedor-textos p {
   font-size: 18px;
   line-height: 1.5;
   color: #b2b2b2;
 }
-
 .contenedor .contenedor img {
   min-width: 400px;
 }
@@ -184,19 +159,16 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-
 footer .padre-redes {
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
-
 footer .icono-redes {
   width: 40px;
   height: 40px;
   margin: 0 5px;
 }
-
 footer .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -208,12 +180,10 @@ footer .whatsapp {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 footer .whatsapp:hover {
   transform: scale(1.1);
   box-shadow: 0 2px 10px #641e04;
 }
-
 footer .contacto.css {
   color: #641e04;
 }
@@ -222,17 +192,14 @@ footer .contacto.css {
   margin: 30px auto;
   min-width: 600px;
 }
-
 .form .form-group {
   margin-bottom: 20px;
 }
-
 .form .form-group .form-label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
-
 .form .form-group .form-control {
   width: 100%;
   padding: 10px;
@@ -240,12 +207,10 @@ footer .contacto.css {
   border-radius: 5px;
   box-shadow: 0 2px 5px #641e04;
 }
-
 .form .form-group .form-control:focus {
   outline: none;
   box-shadow: 0 2px 10px #641e04;
 }
-
 .form .btn {
   padding: 10px 20px;
   border: none;
@@ -255,18 +220,15 @@ footer .contacto.css {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .form .btn-primary {
   background-color: #ac6262;
   color: #b2b2b2;
 }
-
 .form .btn-secondary {
   background-color: #ac6262;
   color: #b2b2b2;
   margin-left: 10px;
 }
-
 .form .btn:hover {
   transform: translateY(-2px);
 }
@@ -277,19 +239,16 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-
 footer .padre-redes {
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
-
 footer .icono-redes {
   width: 30px;
   height: 30px;
   margin: 0 10px;
 }
-
 footer .whatsapp {
   position: fixed;
   bottom: 30px;
@@ -301,7 +260,6 @@ footer .whatsapp {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 footer .whatsapp:hover {
   transform: scale(1.1);
   box-shadow: 0 2px 10px #641e04;
@@ -445,6 +403,7 @@ footer .whatsapp:hover {
     text-align: center;
   }
 }
+
 @media (min-width: 900px) {
   .banner .contenedor-padre {
     flex-direction: row;
@@ -452,6 +411,7 @@ footer .whatsapp:hover {
     gap: 60px;
   }
 }
+
 /* Paleta de colores */
 /* Paleta de colores */
 /* Tamaño de fuentes e iconos */
@@ -476,7 +436,6 @@ footer .whatsapp:hover {
   box-shadow: 0px 2px 5px #641e04;
   overflow: hidden;
 }
-
 .contenedor-card img {
   max-width: 100%;
 }
@@ -550,26 +509,21 @@ nav ul {
   list-style: none;
   display: flex;
 }
-
 nav ul li {
   position: relative;
   margin-right: 1rem;
 }
-
 nav ul li a {
   text-decoration: none;
   color: #641e04;
   transition: color 0.3s ease;
 }
-
 nav ul li a:hover {
   color: #b2b2b2;
 }
-
 nav ul li:last-child {
   margin-right: 0;
 }
-
 nav ul li:hover::before {
   content: "";
   position: absolute;
@@ -580,7 +534,6 @@ nav ul li:hover::before {
   background-color: #b2b2b2;
   animation: underline 0.3s forwards;
 }
-
 @keyframes underline {
   0% {
     width: 0;
@@ -589,29 +542,25 @@ nav ul li:hover::before {
     width: 100%;
   }
 }
+
 .contacto {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-
 .contacto .form {
   margin: 40px;
 }
-
 .contacto .form .form-group {
   margin-bottom: 20px;
 }
-
 .contacto .form form {
   margin: 35px;
 }
-
 .contacto .form form label {
   font-size: 40px;
   color: #b2b2b2;
 }
-
 .contacto .form input {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -619,7 +568,6 @@ nav ul li:hover::before {
   height: 30px;
   width: 200px;
 }
-
 .contacto .form .form-control {
   width: 100%;
   padding: 10px;
@@ -627,12 +575,10 @@ nav ul li:hover::before {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 .contacto .form .form-control:focus {
   outline: none;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-
 .contacto .form .btn {
   padding: 10px 20px;
   border: none;
@@ -642,18 +588,15 @@ nav ul li:hover::before {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .contacto .form .btn-primary {
   background-color: #ff0000;
   color: #b2b2b2;
 }
-
 .contacto .form .btn-secondary {
   background-color: #ff0000;
   color: #b2b2b2;
   margin-left: 10px;
 }
-
 .contacto .form .btn:hover {
   transform: translateY(-2px);
 }
@@ -1070,6 +1013,4 @@ footer {
     text-align: center;
   }
 }
-
-
 /*# sourceMappingURL=styles.css.map */
